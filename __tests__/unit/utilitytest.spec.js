@@ -70,12 +70,12 @@ describe("Scenarios to remove space from a given string/phrase", () => {
     expect(result).toBe('javascript')
   });
 
-  it("Removing the space in a string contains single space ", () => {
+  it("Removing the space in a phrase contains single space ", () => {
     let result = util.removingWhiteSpace('javascript program');
     expect(result).toBe('javascriptprogram')
   });
 
-  it("Removing the space in a string contains more than one space", () => {
+  it("Removing the space in a phrase contains more than one space", () => {
     let result = util.removingWhiteSpace('javascript      program');
     expect(result).toBe('javascriptprogram')
   });
