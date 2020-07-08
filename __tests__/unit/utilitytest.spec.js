@@ -81,11 +81,3 @@ describe("Scenarios to remove space from a given string/phrase", () => {
   });
 
 });
-
-
-
-
-
-
-
-

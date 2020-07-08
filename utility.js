@@ -6,11 +6,11 @@
  */
 exports.verifyPalindrome = (input, caseSensitiveFlag) => {
   input = caseSensitiveFlag ? input : input.toLowerCase();
-  let strLen = input.length;
+  let strIndex = input.length;
   let output = '';
-  while (strLen >= 0) {
-    output += input.charAt(strLen);
-    strLen--;
+  while (strIndex >= 0) {
+    output += input.charAt(strIndex);
+    strIndex--;
   }
   return input === '' ? false : input === output;
 }
@@ -22,10 +22,10 @@ exports.verifyPalindrome = (input, caseSensitiveFlag) => {
 exports.removingWhiteSpace = (input) => {
   let inputArr = input.split(" ")
   let output = '';
-  let lp = 0;
-  while (lp < inputArr.length) {
-    output += inputArr[lp];
-    lp++;
+  let strIndex = 0;
+  while (strIndex < inputArr.length) {
+    output += inputArr[strIndex];
+    strIndex++;
   }
   return output;
 }
